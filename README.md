@@ -183,6 +183,8 @@ else:
 **Inference Script**: `src/hackathon_test_dataset_prediction.py`
 
 **Key Components**:
+- added particles class images to others as prescribed
+- deleted pattern_collapse as no images are given by hackathon dataset
 - ONNX Runtime for cross-platform inference
 - Confidence threshold: 0.5
 - Preprocessing: Resize to 224×224, normalize to [0,1]
