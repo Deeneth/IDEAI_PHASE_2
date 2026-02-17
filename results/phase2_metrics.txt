@@ -1,0 +1,14 @@
+======================================================================
+PHASE-2 HACKATHON SUBMISSION METRICS
+======================================================================
+
+Model: wafer_defect_model.onnx
+Test File Name: hackathon_test_dataset_prediction.py
+Test Samples: 296
+Inference: ONNX Runtime (Edge Simulation)
+Post-Processing: Confidence Threshold Applied (0.5)
+
+Accuracy: 29.73%
+Precision (macro): 31.91%
+Recall (macro): 31.66%
+Correct Predictions: 88/296

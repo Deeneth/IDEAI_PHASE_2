@@ -1,0 +1,76 @@
+======================================================================
+PHASE-2 HACKATHON SUBMISSION: ONNX INFERENCE
+======================================================================
+Test File: hackathon_test_dataset_prediction.py
+Model: wafer_defect_model.onnx
+Inference Engine: ONNX Runtime
+Confidence Threshold: 0.5
+======================================================================
+
+[1/5] Loading ONNX model...
+✓ Model loaded: D:\IESA DEEPTECH HACKATHON\CODE\IESA-DEEPTECH-AI-main\models\wafer_defect_model.onnx
+✓ Model status: UNCHANGED from Phase-1
+
+[2/5] Loading test dataset...
+✓ Test samples: 296
+✓ Dataset classes (8): ['bridge', 'cmp_defect', 'cracks', 'ler', 'opens', 'others', 'undefected', 'via_defect']
+
+[3/5] Running ONNX inference with post-processing...
+✓ Inference complete
+✓ Low-confidence predictions → 'others': 151/296 (51.0%)
+
+[4/5] Computing evaluation metrics...
+✓ Accuracy: 29.73%
+✓ Precision (macro): 31.91%
+✓ Recall (macro): 31.66%
+✓ Correct predictions: 88/296
+
+[5/5] Generating confusion matrix...
+
+Confusion Matrix (8x8):
+Classes: ['bridge', 'cmp_defect', 'cracks', 'ler', 'opens', 'others', 'undefected', 'via_defect']
+[[20  1  1  0  0 10  0  0]
+ [11  0  1  0  0 17  1  0]
+ [ 1  8  5  0  0 15  0  2]
+ [ 9  0  0  1  0 16  4  0]
+ [15  2  0  0  0 12  1  0]
+ [15  8  3  1  1 50  2  0]
+ [ 1  2  0  0  0 20  8  2]
+ [ 4  4  0  0  0 17  1  4]]
+
+Per-Class Performance:
+  bridge               Accuracy:  62.5%  Correct:  20/32   As 'others':  10
+  cmp_defect           Accuracy:   0.0%  Correct:   0/30   As 'others':  17
+  cracks               Accuracy:  16.1%  Correct:   5/31   As 'others':  15
+  ler                  Accuracy:   3.3%  Correct:   1/30   As 'others':  16
+  opens                Accuracy:   0.0%  Correct:   0/30   As 'others':  12
+  others               Accuracy:  62.5%  Correct:  50/80   As 'others':  50
+  undefected           Accuracy:  24.2%  Correct:   8/33   As 'others':  20
+  via_defect           Accuracy:  13.3%  Correct:   4/30   As 'others':  17
+
+======================================================================
+PHASE-2 SUBMISSION COMPLETE
+======================================================================
+Model: wafer_defect_model.onnx (UNCHANGED)
+Test samples: 296
+Accuracy: 29.73%
+Precision (macro): 31.91%
+Recall (macro): 31.66%
+Confidence threshold: 0.5
+======================================================================
+
+✓ Metrics saved: D:\IESA DEEPTECH HACKATHON\CODE\IESA-DEEPTECH-AI-main\results\phase2_metrics.txt
+✓ Confusion matrix saved: D:\IESA DEEPTECH HACKATHON\CODE\IESA-DEEPTECH-AI-main\results\phase2_confusion_matrix.txt
+✓ Console log saved: D:\IESA DEEPTECH HACKATHON\CODE\IESA-DEEPTECH-AI-main\results\phase2_prediction_log.txt
+
+======================================================================
+ALL PHASE-2 ARTIFACTS GENERATED
+======================================================================
+Generated files:
+  1. D:\IESA DEEPTECH HACKATHON\CODE\IESA-DEEPTECH-AI-main\results\phase2_prediction_log.txt
+  2. D:\IESA DEEPTECH HACKATHON\CODE\IESA-DEEPTECH-AI-main\results\phase2_metrics.txt
+  3. D:\IESA DEEPTECH HACKATHON\CODE\IESA-DEEPTECH-AI-main\results\phase2_confusion_matrix.txt
+
+Model status: UNCHANGED (wafer_defect_model.onnx)
+Phase-1 files: UNTOUCHED
+======================================================================

@@ -1,0 +1,17 @@
+# Core ML
+tensorflow>=2.13.0
+
+# ONNX Export & Inference
+tf2onnx>=1.14.0
+onnx>=1.14.0
+onnxruntime>=1.15.0
+
+# Image processing
+opencv-python
+numpy
+pillow
+
+# Evaluation & plotting
+scikit-learn
+matplotlib
+seaborn
