@@ -206,7 +206,22 @@ else:
 | **Confidence Threshold** | **0.5** |
 | **Low-Confidence → "others"** | **151 / 296 (51.0%)** |
 
-### Confusion Matrix
+## Confusion Matrix for Phase 1
+
+```
+Predicted →     Bridge  CMP  Cracks  LER  Opens  Pattern  Undefect  Via
+True ↓
+Bridge            31     1      0     1    11      2        2        0
+CMP Defect         0    34      0     0     0      0       16        0
+Cracks             1     0     50     0     0      3        0        0
+LER                0     1      0    30     0     12        5        0
+Opens              0     0      0     2    58      0        0        0
+Pattern Collapse   0     0      0     8     4     32        4        0
+Undefected         0     1      0     2     0     10       60        2
+Via Defect         0     2      0     0     0      0        6       32
+```
+
+### Confusion Matrix for Phase 2
 
 **8×8 Confusion Matrix** (Rows = True Labels, Columns = Predicted Labels):
 
